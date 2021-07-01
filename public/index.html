@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Chat</title>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-firestore.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyAPc31YV2I2sWfbD42B0E9wPigqaR_ys6I",
+            authDomain: "chatfirebase-practice.firebaseapp.com",
+            projectId: "chatfirebase-practice",
+            storageBucket: "chatfirebase-practice.appspot.com",
+            messagingSenderId: "761978211647",
+            appId: "1:761978211647:web:f7196a0ad90bbb0a11178a"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <link rel="stylesheet" href="css/main.css">
+    
+</head>
+
+<body>
+
+    <div class="d-flex flex-column body-bg border-0 container-page">
+
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container">
+                <a href="#" id="userName" class="navbar-brand">BChat</a>
+                <div>
+                    <button id="logIn" class="btn btn-primary">Ingresar</button>
+                    <button id="logOut" class="btn btn-danger">Cerrar Sesión</button>
+                </div>
+            </div>
+        </nav>
+
+        <main id="webContent" class="container py-3 mb-3 border border-0 rounded-bottom chat-container">
+        </main>
+
+        <div class="container">
+            <form id="form" class="row mt-auto mb-3 px-1 px-md-0">
+                <div class="col-9 col-md-10 col-lg-11 p-0 pe-2">
+                    <input type="text" id="inputText" class="form-control" placeholder="...">
+                </div>
+                
+                <button type="submit" class="btn btn-dark col-3 col-md-2 col-lg-1">Enviar</button>
+            </form>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <script src="/js/main.js"></script>
+</body>
+
+</html>

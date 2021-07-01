@@ -1,0 +1,25 @@
+.container-page {
+    height: 100vh;
+}
+.body-bg {
+    background-color: rgb(23, 93, 114);
+}
+.chat-container {
+    background-color: rgb(143, 143, 143);
+    background-image: url(/img/background-chat.jpg);
+    overflow-y: scroll;
+    flex: 1;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.prim-chat {
+    background-color: rgb(94, 253, 54);
+    box-shadow: 5px 5px 20px black;
+    margin-bottom: 1rem;
+}
+.sec-chat {
+    background-color: rgb(255, 238, 0);
+    box-shadow: -5px 5px 20px black;
+    margin-bottom: 1rem;
+}
